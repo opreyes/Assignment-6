@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Olivia Reyes Resume</title>
+<style>
+.accordion {
+  background-color:steelblue;
+  color:snow;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: outset;
+  outline: none;
+}
+.panel {
+  padding: 0 18px;
+  background-color:lightyellow;
+  display: none;
+  overflow: visible;
+}
+
+table {
+  font-family: helvetica;
+  font-size:100%;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body style='background-color:lightyellow'>
+
+<p><img src="olivia.jpg" alt="image of Olivia Reyes" style="width:227px;height:227px; padding: 0 15px; float: left;"></p>
+<h1 style="text-align:left; color:midnightblue; font-family:elephant; font-size: 300%">Olivia Reyes</h1>
+<hr>
+<h2 style="color:steelblue">Contact</h2>
+<a href="https://www.google.com/maps/place/333+E+Apache+Blvd,+Tempe,+AZ+85281/@33.4144925,-111.9362907,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08c49d87d809:0x23c6391e5a2d3711!8m2!3d33.414488!4d-111.934102"> Address:333 E Apache Blvd. Tempe, AZ</a>
+<br>
+<a href="https://mail.google.com/mail/u/0/"> Email:oliviarayes@icloud.com </a>
+<br>
+<a href="https://www.google.com/search?q=phone+number&oq=phone&aqs=chrome.1.69i57j0l7.3117j0j7&sourceid=chrome&ie=UTF-8"> Phone: (623)698-8392</a>
+
+<button class='accordion'> Personal Profile </button>
+<div class='panel'>
+<p style="font-family:helvetica"> I’m Olivia Reyes, a Freshman at ASU studying Digital Culture with a focus in Design.
+I strive to learn more about digital media<br> and programming as a means of venturing into
+new and creative spaces. I have a great share of retail and customer service experience.
+<br>When thinking about what motivates me it quite simple: people.
+Volunteering in my community and helping people get what<br> they need done
+is the basis of my career path. People are my passion, because being a
+positive impact on people, creates a<br> thriving community, and a better world.
+</p>
+</div>
+
+<button class='accordion'> Education </button>
+<div class='panel'>
+<table>
+<tr>
+  <th>School</th>
+  <th>Address</th>
+  <th>Major</th>
+  <th>Graduate?</th>
+</tr>
+<tr>
+  <td>Barry Goldwater HighSchool</td>
+  <td>2820 W Rose Garden Ln, 85027</td>
+  <td> N/A </td>
+  <td>Yes
+</tr>
+<tr>
+  <td>Arizona State University</td>
+  <td>Tempe, AZ 85281</td>
+  <td>Digital Culture(Design)</td>
+  <td>Expected May 2021
+  </table>
+  </div>
+
+<button class='accordion'> Experience </button>
+<div class='panel'>
+<ol style="font-family:helvetica">
+  <li>Graphic Design Intern
+August 2018-May 2019<br>
+Created interactive and eye-catching designs for teachers and administration based on
+their needs. Designed with accessibility<br> in mind. Constantly collaborating and gaining
+feedback on work. </li>
+<br>
+  <li>Kroger, Fry’s Marketplace
+March 2019- August 2019<br>
+Courtesy Clerk- Provided customers with the best shopping experience possible by
+answering questions on the sales floor,<br> bagging groceries, and collecting carts to
+keep parking lots clean. Always greeting and thanking them for coming to our store.</li>
+</ol>
+</div>
+
+<button class='accordion'> References </button>
+<div class='panel'>
+<ul style="font-family:helvetica">
+  <li> Kyle Martin-DVUSD Calculus Teacher <br>Phone:602-573-2239</li>
+  <br>
+  <li> John Simpson-Former Supervisor <br>Phone:623-693-8964</li>
+  <br>
+  <li> Lynda Guetter-DVUSD Graphic Design <br>Teacher Phone:480-267-7541
+  </ul>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
